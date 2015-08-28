@@ -29,7 +29,7 @@ $(document).ready(function(){
        return $.ajax({
         url: ('/shipping/' + cust.id)
       }).done(function(data){
-        custNames[custI].shipAdd = (data.address1 + ' ' + data.address2 + ' ' + data.city + ' ' + data.state + ' ' + data.zip);
+        custNames[custI].shipAdd = (data.address1 + ', ' + data.address2 + ', ' + data.city + ', ' + data.state + ', ' + data.zip);
         appendToDOM(custNames[custI]);
         })
       } else {
@@ -49,7 +49,7 @@ $(document).ready(function(){
     if(!customer.shipAdd){
       customer.shipAdd = customer.billAdd;
     }
-    $newNameli.text(customer.firstName + ' ' + customer.lastName);
+    $newNameli.text(customer.firstName + ' ' + customer.lastName + ':');
     $billAddli.text('Billing address: ' + customer.billAdd);
     $shipAddli.text('Shipping address: ' + customer.shipAdd);
     $newAddList.append($billAddli).append($shipAddli);
@@ -63,7 +63,7 @@ $(document).ready(function(){
     custNames.forEach(function(person, personI){
       custBilling.forEach(function(place, placeI){
         if(person.id == place.customerId){
-          custNames[personI].billAdd = (place.address1 + ' ' + place.city + ' ' + place.state + ' ' + place.zip);
+          custNames[personI].billAdd = (place.address1 + ', ' + place.city + ', ' + place.state + ', ' + place.zip);
           custNames[personI].sepShip = place.shipAdd;
         }
       })
