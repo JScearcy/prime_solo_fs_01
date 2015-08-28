@@ -42,6 +42,8 @@ $(document).ready(function(){
     $newCustDiv = $('<div>');
     $newCustList = $('<ul>');
     $newNameli = $('<li>');
+    $newAddli = $('<li>');
+    $newAddList = $('<ul>');
     $shipAddli = $('<li>');
     $billAddli = $('<li>');
     if(!customer.shipAdd){
@@ -50,7 +52,9 @@ $(document).ready(function(){
     $newNameli.text(customer.firstName + ' ' + customer.lastName);
     $billAddli.text('Billing address: ' + customer.billAdd);
     $shipAddli.text('Shipping address: ' + customer.shipAdd);
-    $newCustList.append($newNameli).append($billAddli).append($shipAddli);
+    $newAddList.append($billAddli).append($shipAddli);
+    $newAddli.append($newAddList)
+    $newCustList.attr({class: 'addList'}).append($newNameli).append($newAddli);
     $newCustDiv.append($newCustList);
     $customers.append($newCustDiv);
   }
