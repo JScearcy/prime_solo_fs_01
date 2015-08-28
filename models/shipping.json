@@ -1,0 +1,20 @@
+[
+  {
+    "address1": "4321 Space Ave",
+    "address2": "",
+    "city": "Saint Paul",
+    "state": "MN",
+    "zip": "55101",
+    "phone_number": "999-999-9999",
+    "customerId": "1"
+  },
+  {
+    "address1": "4321 Coast Ave",
+    "address2": "",
+    "city": "Bloomington",
+    "state": "MN",
+    "zip": "55425",
+    "phone_number": "555-555-9999",
+    "customerId": "4"
+  }
+]

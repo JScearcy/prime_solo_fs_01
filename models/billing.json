@@ -1,0 +1,42 @@
+[
+  {
+    "address1": "1234 Ghost Ave",
+    "address2": "",
+    "city": "Saint Paul",
+    "state": "MN",
+    "zip": "55101",
+    "phone_number": "999-999-9999",
+    "customerId": "1",
+    "shipAdd": "true"
+  },
+  {
+    "address1": "1234 Town Ave",
+    "address2": "",
+    "city": "Bloomington",
+    "state": "MN",
+    "zip": "55425",
+    "phone_number": "555-555-9999",
+    "customerId": "2",
+    "shipAdd": "false"
+  },
+  {
+    "address1": "1234 Coast Ave",
+    "address2": "",
+    "city": "Wayzata",
+    "state": "MN",
+    "zip": "55391",
+    "phone_number": "123-456-7890",
+    "customerId": "3",
+    "shipAdd": "false"
+  },
+  {
+    "address1": "1234 Space Ave S",
+    "address2": "",
+    "city": "Minneapolis",
+    "state": "MN",
+    "zip": "55404",
+    "phone_number": "987-654-3210",
+    "customerId": "4",
+    "shipAdd": "true"
+  }
+]
